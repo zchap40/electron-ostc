@@ -57,25 +57,23 @@ Versions
 The OSTC was originally designed and developed by G. Colville (ramtop-retro),
 and is available here as OSTC_v1.
 
-I developed a more compact version of the PCB, with an almost identical circuit,
+I (zchap40) developed a more compact version of the PCB, with an almost identical circuit,
 filed here as OSTC_v2. The Electron is not just an elegant looking machine from
-the exterior, but in my opinion, is also of elegant design on the inside too.
-I wanted a version of the OSTC that matched the aesthetic of the Electron's motherboard,
+the exterior, but in my opinion, is also of elegant design on the inside too. I wanted
+a version of the OSTC that matched the aesthetic of the Electron's motherboard,
 and that's what I hope OSTC_v2 delivers.
 
 The turbo switching functionality of the original OSTC circuit is an emulated switch,
 and does not allow the turbo card to be physically switched out of the motherboard.
-This is why I removed the header for the external switch in OSTC_v2. I felt it wasn't
-useful enough to take up board space. OSTC_v3 takes the idea for the OSTC further
-by providing actual hardware switching functionality. It employs high-bandwidth analog
-data switches to connect the 12 re-routed data lines from the motherboard to either the
-OSTC circuit, or directly to the 6502 processor. This is controlled by the on-board
-three-way switch, allowing the turbo card to be set to 1) turbo speed, 2) normal speed
-(emulated), and 3) native speed (turbo card physically switched out). A two-pin micro
-header allows an external switch to be connected to enable the 'native'
-mode, where the turbo card is completely switched out of the hardware. Closing the
-external switch will always override whatever setting is selected on the on-board switch
-of the turbo card.
+OSTC_v3 takes the idea for the OSTC further by providing actual hardware switching
+functionality. It employs high-bandwidth analog data switches to connect the 12 re-routed
+data lines from the motherboard to either the OSTC circuit, or directly to the 6502 
+processor. This is controlled by the on-board three-way switch, allowing the turbo card
+to be set to 1) turbo speed, 2) normal speed (emulated), and 3) native speed (turbo card
+physically switched out). A two-pin micro header allows an external switch to be connected 
+to enable the 'native' mode, where the turbo card is completely switched out of the
+hardware. Closing the external switch will always override whatever setting is selected
+on the on-board switch of the turbo card.
 
 OSTC_v3 has the exact same PCB form factor as OSTC_v2. The only disadvantage is the
 higher cost of construction.
