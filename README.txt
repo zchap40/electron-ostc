@@ -57,13 +57,13 @@ Versions
 The OSTC was originally designed and developed by G. Colville (ramtop-retro),
 and is available here as OSTC_v1.
 
-I (zchap40) developed a more compact version of the PCB, with an almost identical
-circuit, filed here as OSTC_v2. The Electron is not just an elegant looking machine
-from the exterior, but in my opinion, is also of elegant design on the inside too.
+I developed a more compact version of the PCB, with an almost identical circuit,
+filed here as OSTC_v2. The Electron is not just an elegant looking machine from
+the exterior, but in my opinion, is also of elegant design on the inside too.
 I wanted a version of the OSTC that matched the aesthetic of the Electron's motherboard,
 and that's what I hope OSTC_v2 delivers.
 
-The turbo switching functionality of the original OSTC circuit is a software switch,
+The turbo switching functionality of the original OSTC circuit is an emulated switch,
 and does not allow the turbo card to be physically switched out of the motherboard.
 This is why I removed the header for the external switch in OSTC_v2. I felt it wasn't
 useful enough to take up board space. OSTC_v3 takes the idea for the OSTC further
@@ -71,14 +71,14 @@ by providing actual hardware switching functionality. It employs high-bandwidth 
 data switches to connect the 12 re-routed data lines from the motherboard to either the
 OSTC circuit, or directly to the 6502 processor. This is controlled by the on-board
 three-way switch, allowing the turbo card to be set to 1) turbo speed, 2) normal speed
-(software implemented), and 3) native speed (turbo card physically switched out). A
-two-pin micro header allows an external switch to be connected to enable the 'native'
+(emulated), and 3) native speed (turbo card physically switched out). A two-pin micro
+header allows an external switch to be connected to enable the 'native'
 mode, where the turbo card is completely switched out of the hardware. Closing the
 external switch will always override whatever setting is selected on the on-board switch
 of the turbo card.
 
 OSTC_v3 has the exact same PCB form factor as OSTC_v2. The only disadvantage is the
-slightly higher cost of construction.
+higher cost of construction.
 
 
 Files
@@ -122,8 +122,8 @@ R2			4Kohm 1206 resistor				RNCP1206FTD4K02CT-ND (Digikey)
 JTAG, SW1, DBG		0.1" pin headers, right-angle			547-3223 (RS Components)
 6502			2x Low profile 40-way turned pin socket 	197-2726 (RS Components)
 ElkMB			2x 20 way round pin headers (see below)		BBL-120-T-E (Toby Electronics)
-XC9500XL		Xilinx XC9536XL 44-pin CPLD			122-1385-ND (Digikey)
-SRAM			IS62C256AL-45ULI				706-1043-ND (Digikey)
+XC9500XL		Xilinx XC9536XL 44-pin VQFP			122-1385-ND (Digikey)
+SRAM			IS62C256AL-45ULI 28-pin SOP			706-1043-ND (Digikey)
 
 
 OSTC_v1 has been designed to be fairly easy to build if you have some surface mount
@@ -176,6 +176,24 @@ The components necessary for OSTC_v3 are:
 
 REF	QTY	Component 					Part No.
 
+X1	1	Molex 505567-0651 6-ckt Micro-Lock socket	538-505567-0651 (Mouser)
+X2	1	Molex 505567-0251 2-ckt Micro-Lock socket	538-505567-0251 (Mouser)
+X3	2	Samtec BBL-120-G-E 20-way 0.1" terminal strip	200-BBL120GE (Mouser)
+U1	1	Samtec ICO-640-SGG (socket for 6502)		200-ICO640SGG (Mouser)
+U2	1	Xilinx XC9536XL-10CSG48I 48-BGA CPLD		217-C9536XL-10CSG48I (Mouser)
+U3	1	ISSI IS62C256AL-45TLI 28-TSOP 8x32k SRAM	870-IS62C256AL-45TLI (Mouser)
+U4	1	Texas LP5912Q3.3DRVRQ1 6-WSON 3.3V regulator	595-LP5912Q3.3DRVRQ1 (Mouser)
+U5, U6	4	Maxim MAX4996ETG+ 24-TQFN analog switch 3x DPDT	700-MAX4996ETG (Mouser)
+U7, U8	
+S1	1	NKK SS314MAH4 SP3T slide-switch			633-SS314MAH4-R (Mouser)
+C1, C2	2	10uF X7R ceramic capacitor, 1206 SMD		810-CGA5L1X7R1H106K6 (Mouser)
+C3, C4	2	100nF X7R ceramic capacitor, 1206 SMD		810-CGA5L2X7R2A104K (Mouser)
+R1, R2	1	4K 0.25W resistor, 0805 SMD			660-RK73H2ATTD4021F (Mouser)
+
+Cable	1	Molex 45111-0606 Micro-Lock cable		538-45111-0606 (Mouser)
+		(for programming CPLD)
+Cable	1	Molex 45111-0206 Micro-Lock cable		538-45111-0206 (Mouser)
+		(for connecting external switch)
 
 
 How to fit it
