@@ -23,7 +23,7 @@ between the ULA and CPU purely to simplify the Electron's design.
 The trick is to stop the ULA from contending the lower 12K. We do this by
 adding some new memory dedicated to the CPU, in this case a 32K SRAM chip.
 All reads and writes to the 0-12K area are redirected to the SRAM chip - old
-turbo cards handled the first 8K only to simplify the required logic, be here
+turbo cards handled the first 8K only to simplify the required logic, but here
 we do all 12K. The 6502's databus is passed through the CPLD chip, which sets
 it to high impedance when the SRAM is being accessed, effectively preventing
 the Elk's on-board DRAM from causing bus contention.
