@@ -154,19 +154,21 @@ The components necessary for OSTC_v2 are:
 REF	QTY	Component 					Part No.
 
 X1	1	Molex 505567-0651 6-ckt Micro-Lock socket	538-505567-0651 (Mouser)
-X2	2	Samtec BBL-120-G-E 20-way 0.1" terminal strip	200-BBL120GE (Mouser)
-U1	1	Samtec ICO-640-SGG (socket for 6502)		200-ICO640SGG (Mouser)
+X2	1	Molex 505567-0251 2-ckt Micro-Lock socket	538-505567-0251 (Mouser)
+X3	2	Samtec BBL-120-G-E 20-way 0.1" terminal strip	200-BBL120GE (Mouser)
+U1	1	Samtec ICO-640-SGG 40-DIP low-profile socket	200-ICO640SGG (Mouser)
 U2	1	Xilinx XC9536XL-10CSG48I 48-BGA CPLD		217-C9536XL-10CSG48I (Mouser)
 U3	1	ISSI IS62C256AL-45TLI 28-TSOP 8x32k SRAM	870-IS62C256AL-45TLI (Mouser)
 U4	1	Texas LP5912Q3.3DRVRQ1 6-WSON 3.3V regulator	595-LP5912Q3.3DRVRQ1 (Mouser)
 S1	1	NKK SS312SAH4 SPDT slide-switch			633-SS312SAH4 (Mouser)
 C1, C2	2	10uF X7R ceramic capacitor, 1206 SMD		810-CGA5L1X7R1H106K6 (Mouser)
 C3, C4	2	100nF X7R ceramic capacitor, 1206 SMD		810-CGA5L2X7R2A104K (Mouser)
-R1	1	4K 0.25W resistor, 0805 SMD			660-RK73H2ATTD4021F (Mouser)
-R2	1	2K 0.25W resistor, 0805 SMD			660-RK73H2ATTDD2001F (Mouser)	
+R1	1	4K7 0.25W resistor, 0805 SMD			660-RK73H2ATTD4701F (Mouser)	
 
 Cable	1	Molex 45111-0606 Micro-Lock cable		538-45111-0606 (Mouser)
 		(for programming CPLD)
+Cable	1	Molex 45111-0206 Micro-Lock cable		538-45111-0206 (Mouser)
+		(for connecting external switch)
 
 **OSTC_v3**
 
@@ -177,7 +179,7 @@ REF	QTY	Component 					Part No.
 X1	1	Molex 505567-0651 6-ckt Micro-Lock socket	538-505567-0651 (Mouser)
 X2	1	Molex 505567-0251 2-ckt Micro-Lock socket	538-505567-0251 (Mouser)
 X3	2	Samtec BBL-120-G-E 20-way 0.1" terminal strip	200-BBL120GE (Mouser)
-U1	1	Samtec ICO-640-SGG (socket for 6502)		200-ICO640SGG (Mouser)
+U1	1	Samtec ICO-640-SGG 40-DIP low-profile socket	200-ICO640SGG (Mouser)
 U2	1	Xilinx XC9536XL-10CSG48I 48-BGA CPLD		217-C9536XL-10CSG48I (Mouser)
 U3	1	ISSI IS62C256AL-45TLI 28-TSOP 8x32k SRAM	870-IS62C256AL-45TLI (Mouser)
 U4	1	Texas LP5912Q3.3DRVRQ1 6-WSON 3.3V regulator	595-LP5912Q3.3DRVRQ1 (Mouser)
@@ -186,7 +188,7 @@ U7, U8
 S1	1	NKK SS314MAH4 SP3T slide-switch			633-SS314MAH4-R (Mouser)
 C1, C2	2	10uF X7R ceramic capacitor, 1206 SMD		810-CGA5L1X7R1H106K6 (Mouser)
 C3, C4	2	100nF X7R ceramic capacitor, 1206 SMD		810-CGA5L2X7R2A104K (Mouser)
-R1, R2	1	4K 0.25W resistor, 0805 SMD			660-RK73H2ATTD4021F (Mouser)
+R1, R2	1	4K7 0.25W resistor, 0805 SMD			660-RK73H2ATTD4701F (Mouser)
 
 Cable	1	Molex 45111-0606 Micro-Lock cable		538-45111-0606 (Mouser)
 		(for programming CPLD)
@@ -206,13 +208,14 @@ Component 					Part No.
 Samtec ICA-640-SGG				200-ICA640SGG (Mouser)
 
 Once the CPU is removed it should be installed into the socket on the OSTC marked '6502' (marked 'U1'
-on OSTC_v2) with the orientation notch facing away from the JTAG header. Then, solder the recommended
-40-pin socket into the CPU area (IC3) on the motherboard. Insert the OSTC into the socket, pushing
-firmly and making sure it is correctly aligned.
+on OSTC_v2 and v3) with the orientation notch facing away from the JTAG header. Then, solder the
+recommended 40-pin socket into the CPU area (IC3) on the motherboard. Insert the OSTC into the socket,
+pushing firmly and making sure it is correctly aligned.
 
 If you want to externally control the CPU speed, a switch can be connected between pins 1 and 2 of
-SW1 on OSTC_v1. On OSTC_v3, a Molex Micro-Lock cable assembly can be attached to the 2-pin 
-Micro-Lock header to connect an external switch to control hardware switch-in/out of the turbo card.
+SW1 on OSTC_v1. On OSTC_v2, the same function is served via a Molex Micro-Lock cable assembly that can be
+attached to the 2-pin Micro-Lock header (X2). On OSTC_v3, the same Molex Micro-Lock connector controls
+hardware switch-in/out of the turbo card, instead of an emulated speed reduction.
 
 A Rockwell R65C02 rated 2MHz or faster can be fitted in place of the original NMOS 6502, to
 reduce heat build-up. WDC branded 65C02s will not work.
