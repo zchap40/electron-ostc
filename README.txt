@@ -95,9 +95,7 @@ How to build it
 
 The 'Gerbers' directory contains Zip files for each version that you can upload to any 
 PCB fabrication service to have them produce OSTC PCBs for you. In Europe, aisler.net
-is recommended. Please note that version 1 of the PCB is a 2-layer board,
-while versions 2 & 3 are 4-layer. The extra cost for having a 4-layer board fabricated
-is marginal at most of the cheap PCB houses.
+is recommended. Please note that all three versions of the PCB are 4-layer boards.
 
 The 'PCB' directory has the original PCB layout files in Diptrace format for version 1,
 and Autodesk Eagle format for versions 2 & 3. Many PCB fabrication houses (including
