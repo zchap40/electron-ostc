@@ -63,13 +63,13 @@ the exterior, but in my opinion, is also of elegant design on the inside too. I 
 a version of the OSTC that matched the aesthetic of the Electron's motherboard without
 being large and unwieldy, and for that you may find OSTC_v2 of interest.
 
-The turbo switching functionality of the original OSTC circuit is an emulated switch
-run on the turbo card itself, and does not actually physically switch it out of the 
+The turbo switching functionality of the original OSTC circuit throttles the speed via
+the turbo card itself, and does not actually physically switch the card out of the 
 motherboard. OSTC_v3 takes the idea for the Electron OSTC further by providing actual hardware 
 switching functionality. It employs high-bandwidth analog data switches to connect the 
 12 re-routed data lines from the motherboard to either the OSTC circuit, or directly to 
 the 6502 processor. This is controlled by the on-board three-way switch, allowing the turbo 
-card to be set to 1) turbo speed, 2) normal speed (emulated), and 3) native speed (turbo card
+card to be set to 1) turbo speed, 2) normal speed (throttled), and 3) native speed (turbo card
 physically switched out). A two-pin micro header allows an external switch to be connected 
 to enable the 'native' mode, where the turbo card is completely switched out of the
 hardware. Closing the external switch will always override whatever setting is selected
@@ -214,7 +214,7 @@ pushing firmly and making sure it is correctly aligned.
 If you want to externally control the CPU speed, a switch can be connected between pins 1 and 2 of
 SW1 on OSTC_v1. On OSTC_v2, the same function is served via a Molex Micro-Lock cable assembly that can be
 attached to the 2-pin Micro-Lock header (X2). On OSTC_v3, the same Molex Micro-Lock connector controls
-hardware switch-in/out of the turbo card, instead of an emulated speed reduction.
+hardware switch-in/out of the turbo card, instead of speed throttling by the turbo card.
 
 A Rockwell R65C02 rated 2MHz or faster can be fitted in place of the original NMOS 6502, to
 reduce heat build-up. WDC branded 65C02s will not work.
