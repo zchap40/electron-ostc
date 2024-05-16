@@ -61,7 +61,7 @@ I (zchap40) developed a more compact version of the PCB, with an almost identica
 filed here as OSTC_v2. The Electron is not just an elegant looking machine from
 the exterior, but in my opinion, is also of elegant design on the inside too. I wanted
 a version of the OSTC that matched the aesthetic of the Electron's motherboard without
-being large and unwieldy, and for that you may find OSTC_v2 of interest.
+being unnecessarily large, and for that you may find OSTC_v2 of interest.
 
 The turbo switching functionality of the original OSTC circuit throttles the speed via
 the turbo card itself, and does not actually physically switch the card out of the 
@@ -71,13 +71,14 @@ switching functionality. It employs high-bandwidth analog data switches to conne
 the 6502 processor. This is controlled by the on-board three-way switch, allowing the turbo 
 card to be set to 1) turbo speed, 2) normal speed (throttled), and 3) native speed (turbo card
 physically switched out). A two-pin micro header allows an external switch to be connected 
-to enable the 'native' mode, where the turbo card is completely switched out of the
-hardware. Closing the external switch will always override whatever setting is selected
-on the on-board switch of the turbo card. Of course, the Electron will always have to be
-rebooted after switching between 'native' mode and the other two modes.
+to disable turbo mode in one of two ways. Either via 'native' mode, where the turbo card is
+completely switched out of the hardware, or throttle mode. Which way the external switch will act
+can be decided during construction through the soldering of an 0 ohm smd link in one of two
+positions. Of course, the Electron will always have to be rebooted after switching between
+'native' mode and the other two modes.
 
 OSTC_v3 has the exact same PCB form factor as OSTC_v2. The only disadvantage is the
-higher cost of construction.
+higher cost and increased difficulty of construction.
 
 
 Files
