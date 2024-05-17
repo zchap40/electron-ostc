@@ -72,10 +72,13 @@ the 6502 processor. This is controlled by the on-board three-way switch, allowin
 card to be set to 1) turbo speed, 2) normal speed (throttled), and 3) native speed (turbo card
 physically switched out). A two-pin micro header allows an external switch to be connected 
 to disable turbo mode in one of two ways. Either via 'native' mode, where the turbo card is
-completely switched out of the hardware, or throttle mode. Which way the external switch will act
-can be decided during construction through the soldering of an 0 ohm smd link in one of two
-positions. Of course, the Electron will always have to be rebooted after switching between
-'native' mode and the other two modes.
+completely switched out of the hardware, or 'normal' mode, through speed throttling by the turbo
+card itself mode. Which way the external switch will act can be decided during construction
+through the soldering of an 0 ohm smd link in one of two positions. Of course, the Electron will
+always have to be rebooted after switching between 'native' mode and the other two modes. The
+advantage of this version of the turbo card though is that it provides a way to easily switch
+the Electron back to a state where it is completely unmodified without having to open up the
+machine and physically remove the card.
 
 OSTC_v3 has the exact same PCB form factor as OSTC_v2. The only disadvantage is the
 higher cost and increased difficulty of construction.
