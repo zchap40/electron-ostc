@@ -54,10 +54,10 @@ to locate the display < 12K won't run.
 Versions
 --------
 
-The OSTC was originally designed and developed by G. Colville (ramtop-retro),
-and is available here as OSTC_v1.
+The OSTC was originally designed and developed by G. Colville (ramtop-retro).
+OSTC_v1 can be downloaded from ramtop-retro/ostc.
 
-I (zchap40) developed a more compact version of the PCB, with an almost identical circuit,
+Here we present a more compact version of the PCB, with an almost identical circuit,
 filed here as OSTC_v2. The Electron is not just an elegant looking machine from
 the exterior, but in my opinion, is also of elegant design on the inside too. I wanted
 a version of the OSTC that matched the aesthetic of the Electron's motherboard without
@@ -70,18 +70,15 @@ switching functionality. It employs high-bandwidth analog data switches to conne
 12 re-routed data lines from the motherboard to either the OSTC circuit, or directly to 
 the 6502 processor. This is controlled by the on-board three-way switch, allowing the turbo 
 card to be set to 1) turbo speed, 2) normal speed (throttled), and 3) native speed (turbo card
-physically switched out). A two-pin micro header allows an external switch to be connected 
-to disable turbo mode in one of two ways. Either via 'native' mode, where the turbo card is
-completely switched out of the hardware, or 'normal' mode, through speed throttling by the turbo
-card itself mode. Which way the external switch will act can be decided during construction
-through the soldering of an 0 ohm smd link in one of two positions. Of course, the Electron will
-always have to be rebooted after switching between 'native' mode and the other two modes. The
-advantage of this version of the turbo card though is that it provides a way to easily switch
-the Electron back to a state where it is completely unmodified without having to open up the
-machine and physically remove the card.
+physically switched out). Similarly, dual two-pin micro headers allow two separate external
+switches to be connected in lieux of the on-board switch to disable turbo mode via 'native'
+mode, where the turbo card is completely switched out of the hardware, or 'normal' mode,
+through speed throttling by the turbo card itself. Of course, the Electron will always have
+to be rebooted after switching between 'native' mode and the other two modes.
 
-OSTC_v3 has the exact same PCB form factor as OSTC_v2. The only disadvantage is the
-higher cost and increased difficulty of construction.
+Although higher in cost and more difficult to construct, OSTC_v3 allows the Electron to
+easily switch back to a state where it is completely unmodified without having to open up the
+machine and physically remove the turbo card.
 
 
 Files
@@ -158,8 +155,8 @@ REF	QTY	Component 					Part No.
 
 X1	1	Molex 505567-0651 6-ckt Micro-Lock socket	538-505567-0651 (Mouser)
 X2	1	Molex 505567-0251 2-ckt Micro-Lock socket	538-505567-0251 (Mouser)
-X3	2	Samtec BBL-120-G-F 20-way 0.1" terminal strip	200-BBL120GF (Mouser)
-U1	1	Samtec ICO-640-LGG 40-DIP low-profile socket	200-ICO640LGG (Mouser)
+X3	2	Samtec BBL-120-G-E 20-way 0.1" terminal strip	200-BBL120GF (Mouser)
+U1	1	Samtec ICO-640-CGG 40-DIP low-profile socket	200-ICO640LGG (Mouser)
 U2	1	Xilinx XC9536XL-10CSG48I 48-BGA CPLD		217-C9536XL-10CSG48I (Mouser)
 U3	1	ISSI IS62C256AL-45TLI 28-TSOP 8x32k SRAM	870-IS62C256AL-45TLI (Mouser)
 U4	1	Texas LP5912Q3.3DRVRQ1 6-WSON 3.3V regulator	595-LP5912Q3.3DRVRQ1 (Mouser)
@@ -180,17 +177,17 @@ The components necessary for OSTC_v3 are:
 REF	QTY	Component 					Part No.
 
 X1	1	Molex 505567-0651 6-ckt Micro-Lock socket	538-505567-0651 (Mouser)
-X2	1	Molex 505567-0251 2-ckt Micro-Lock socket	538-505567-0251 (Mouser)
-X3	2	Samtec BBL-120-G-F 20-way 0.1" terminal strip	200-BBL120GF (Mouser)
-U1	1	Samtec ICO-640-LGG 40-DIP low-profile socket	200-ICO640LGG (Mouser)
+X2	2	Molex 505567-0251 2-ckt Micro-Lock socket	538-505567-0251 (Mouser)
+X3	2	Samtec BBL-120-G-E 20-way 0.1" terminal strip	200-BBL120GE (Mouser)
+U1	1	Samtec ICO-640-CGG 40-DIP micro-profile socket	200-ICO640CGG (Mouser)
 U2	1	Xilinx XC9536XL-10CSG48I 48-BGA CPLD		217-C9536XL-10CSG48I (Mouser)
 U3	1	ISSI IS62C256AL-45TLI 28-TSOP 8x32k SRAM	870-IS62C256AL-45TLI (Mouser)
 U4	1	Texas LP5912Q3.3DRVRQ1 6-WSON 3.3V regulator	595-LP5912Q3.3DRVRQ1 (Mouser)
 U5, U6	4	Maxim MAX4996ETG+ 24-TQFN 3x DPDT analog switch	700-MAX4996ETG (Mouser)
 U7, U8	
 S1	1	NKK SS314MAH4 SP3T slide-switch			633-SS314MAH4-R (Mouser)
-C1, C2	2	10uF X7R ceramic capacitor, 1206 SMD		810-CGA5L1X7R1H106K6 (Mouser)
-C3, C4	2	100nF X7R ceramic capacitor, 1206 SMD		810-CGA5L2X7R2A104K (Mouser)
+C1, C2	2	10uF X7R ceramic capacitor, 0805 SMD		81-GRM21BZ71E106KE5K (Mouser)
+C3, C4	2	100nF X7R ceramic capacitor, 0805 SMD		80-C0805X104J5RAUTO (Mouser)
 R1, R2	2	4K7 0.25W resistor, 0805 SMD			660-RK73H2ATTD4701F (Mouser)
 
 Cable	1	Molex 45111-0606 Micro-Lock cable		538-45111-0606 (Mouser)
