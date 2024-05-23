@@ -54,10 +54,10 @@ to locate the display < 12K won't run.
 Versions
 --------
 
-The OSTC was originally designed and developed by G. Colville (ramtop-retro),
-and is available here as OSTC_v1.
+The OSTC was originally designed and developed by G. Colville (ramtop-retro).
+OSTC_v1 can be downloaded from ramtop-retro/ostc.
 
-I (zchap40) developed a more compact version of the PCB, with an almost identical circuit,
+Here we present a more compact version of the PCB, with an almost identical circuit,
 filed here as OSTC_v2. The Electron is not just an elegant looking machine from
 the exterior, but in my opinion, is also of elegant design on the inside too. I wanted
 a version of the OSTC that matched the aesthetic of the Electron's motherboard without
@@ -71,14 +71,14 @@ switching functionality. It employs high-bandwidth analog data switches to conne
 the 6502 processor. This is controlled by the on-board three-way switch, allowing the turbo 
 card to be set to 1) turbo speed, 2) normal speed (throttled), and 3) native speed (turbo card
 physically switched out). Similarly, dual two-pin micro headers allow two separate external
-switches to be connected to disable turbo mode via 'native' mode, where the turbo card is
-completely switched out of the hardware, or 'normal' mode, through speed throttling by the
-turbo card itself.
+switches to be connected in lieux of the on-board switch to disable turbo mode via 'native'
+mode, where the turbo card is completely switched out of the hardware, or 'normal' mode,
+through speed throttling by the turbo card itself. Of course, the Electron will always have
+to be rebooted after switching between 'native' mode and the other two modes.
 
-Of course, the Electron will always have to be rebooted after switching between 'native' mode
-and the other two modes. Although higher in cost and more difficult to construct, OSTC_v3
-allows the Electron to easily switch back to a state where it is completely unmodified without
-having to open up the machine and physically remove the turbo card.
+Although higher in cost and more difficult to construct, OSTC_v3 allows the Electron to
+easily switch back to a state where it is completely unmodified without having to open up the
+machine and physically remove the turbo card.
 
 
 Files
