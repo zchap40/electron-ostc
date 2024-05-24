@@ -155,7 +155,7 @@ REF	QTY	Component 					Part No.
 
 X1	1	Molex 505567-0651 6-ckt Micro-Lock socket	538-505567-0651 (Mouser)
 X2	1	Molex 505567-0251 2-ckt Micro-Lock socket	538-505567-0251 (Mouser)
-X3	2	Samtec BBL-120-G-E 20-way 0.1" terminal strip	200-BBL120GF (Mouser)
+X3	2	Samtec BBL-120-G-E 20-way 0.1" terminal strip	200-BBL120GE (Mouser)
 U1	1	Samtec ICO-640-CGG 40-DIP low-profile socket	200-ICO640LGG (Mouser)
 U2	1	Xilinx XC9536XL-10CSG48I 48-BGA CPLD		217-C9536XL-10CSG48I (Mouser)
 U3	1	ISSI IS62C256AL-45TLI 28-TSOP 8x32k SRAM	870-IS62C256AL-45TLI (Mouser)
