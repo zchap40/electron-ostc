@@ -2306,6 +2306,9 @@ Everything else you will find on https://aisler.net/help</description>
 <contactref element="X2" pad="4"/>
 <contactref element="S1" pad="P$1"/>
 <contactref element="S1" pad="P$2"/>
+<via x="12.05" y="7.3125" extent="1-16" drill="0.25" diameter="0.4"/>
+<via x="15.05" y="22.85" extent="1-16" drill="0.25" diameter="0.4"/>
+<via x="14.8" y="30.8" extent="1-16" drill="0.25" diameter="0.4"/>
 </signal>
 <signal name="+5V">
 <contactref element="U4" pad="6"/>
@@ -2651,14 +2654,12 @@ Everything else you will find on https://aisler.net/help</description>
 <wire x1="10.7975" y1="23.81" x2="10.425" y2="23.4375" width="0.125" layer="16"/>
 <via x="10.425" y="23.4375" extent="1-16" drill="0.25" diameter="0.45"/>
 <wire x1="10.425" y1="23.4375" x2="10.425" y2="23.225" width="0.3048" layer="1"/>
-<wire x1="10.425" y1="23.225" x2="10.9" y2="22.75" width="0.3048" layer="1"/>
-<wire x1="10.9" y1="22.75" x2="11.05" y2="22.7" width="0.3048" layer="1"/>
-<wire x1="11.05" y1="22.7" x2="11.05" y2="21.7" width="0.3048" layer="1"/>
-<wire x1="11.05" y1="21.7" x2="11.4" y2="21.4" width="0.3048" layer="1"/>
-<wire x1="11.4" y1="21.4" x2="11.6" y2="21.2" width="0.3048" layer="1"/>
-<wire x1="11.6" y1="21.2" x2="11.6" y2="16.3" width="0.3048" layer="1"/>
-<wire x1="11.6" y1="16.3" x2="11.95" y2="15.95" width="0.3048" layer="1"/>
-<wire x1="11.95" y1="15.95" x2="15.15" y2="15.95" width="0.3048" layer="1"/>
+<wire x1="10.425" y1="23.225" x2="10.95" y2="22.7" width="0.3048" layer="1"/>
+<wire x1="10.95" y1="22.7" x2="10.95" y2="21.7" width="0.3048" layer="1"/>
+<wire x1="10.95" y1="21.7" x2="11.7" y2="21.2" width="0.3048" layer="1"/>
+<wire x1="11.7" y1="21.2" x2="11.7" y2="16.3" width="0.3048" layer="1"/>
+<wire x1="11.7" y1="16.3" x2="12.05" y2="15.95" width="0.3048" layer="1"/>
+<wire x1="12.05" y1="15.95" x2="15.15" y2="15.95" width="0.3048" layer="1"/>
 <wire x1="15.15" y1="15.95" x2="16" y2="15.1" width="0.3048" layer="1"/>
 <wire x1="16" y1="15.1" x2="16" y2="10.8" width="0.3048" layer="1"/>
 <wire x1="16" y1="10.8" x2="16.4" y2="10.4" width="0.3048" layer="1"/>
@@ -2828,13 +2829,12 @@ Everything else you will find on https://aisler.net/help</description>
 <signal name="N$35">
 <contactref element="U1" pad="37"/>
 <contactref element="U2" pad="B2"/>
-<wire x1="21.09" y1="43.43" x2="19.68" y2="43.43" width="0.3048" layer="1"/>
-<wire x1="19.68" y1="43.43" x2="19.5" y2="43.2" width="0.3048" layer="1"/>
-<wire x1="19.5" y1="43.2" x2="19.5" y2="24.7" width="0.3048" layer="1"/>
-<wire x1="19.5" y1="24.7" x2="19.25" y2="24.1" width="0.3048" layer="1"/>
-<wire x1="19.25" y1="24.1" x2="15.95" y2="24.1" width="0.3048" layer="1"/>
-<wire x1="15.95" y1="24.1" x2="15.95" y2="24.1125" width="0.3048" layer="1"/>
-<wire x1="15.95" y1="24.1125" x2="15" y2="24.3375" width="0.3048" layer="1"/>
+<wire x1="21.09" y1="43.43" x2="19.83" y2="43.43" width="0.3048" layer="1"/>
+<wire x1="19.83" y1="43.43" x2="19.65" y2="43.25" width="0.3048" layer="1"/>
+<wire x1="19.65" y1="43.25" x2="19.65" y2="24.6" width="0.3048" layer="1"/>
+<wire x1="19.65" y1="24.6" x2="19.35" y2="24.3" width="0.3048" layer="1"/>
+<wire x1="19.35" y1="24.3" x2="15.25" y2="24.3" width="0.3048" layer="1"/>
+<wire x1="15.25" y1="24.3" x2="15" y2="24.3375" width="0.3048" layer="1"/>
 <via x="15" y="24.3375" extent="1-16" drill="0.25" diameter="0.5"/>
 <wire x1="15" y1="24.3375" x2="14.8" y2="24.25" width="0.15" layer="16"/>
 <wire x1="14.8" y1="24.25" x2="14.5" y2="24.25" width="0.15" layer="16"/>
@@ -2876,10 +2876,14 @@ Everything else you will find on https://aisler.net/help</description>
 <wire x1="10.81" y1="27.76" x2="10.4125" y2="27.4125" width="0.15" layer="16"/>
 <via x="10.4125" y="27.4125" extent="1-16" drill="0.25" diameter="0.45"/>
 <wire x1="10.4125" y1="27.4125" x2="10.4125" y2="27.7875" width="0.15" layer="1"/>
-<wire x1="10.4125" y1="27.7875" x2="10.25" y2="27.9" width="0.15" layer="1"/>
-<wire x1="10.25" y1="27.9" x2="8.6" y2="27.9" width="0.15" layer="1"/>
-<wire x1="8.6" y1="27.9" x2="8.4625" y2="27.75" width="0.15" layer="1"/>
-<wire x1="8.4625" y1="27.75" x2="8.4625" y2="23.0375" width="0.15" layer="1"/>
+<wire x1="10.4125" y1="27.7875" x2="10.35" y2="27.85" width="0.15" layer="1"/>
+<wire x1="10.35" y1="27.85" x2="9.25" y2="27.85" width="0.15" layer="1"/>
+<wire x1="9.25" y1="27.85" x2="9.15" y2="27.75" width="0.15" layer="1"/>
+<wire x1="9.15" y1="27.75" x2="9.15" y2="27.1" width="0.15" layer="1"/>
+<wire x1="9.15" y1="27.1" x2="9" y2="26.95" width="0.15" layer="1"/>
+<wire x1="9" y1="26.95" x2="8.7" y2="26.95" width="0.15" layer="1"/>
+<wire x1="8.7" y1="26.95" x2="8.4625" y2="26.7" width="0.15" layer="1"/>
+<wire x1="8.4625" y1="26.7" x2="8.4625" y2="23.0375" width="0.15" layer="1"/>
 <wire x1="8.4625" y1="23.0375" x2="8.65" y2="22.8" width="0.15" layer="1"/>
 <wire x1="8.65" y1="22.8" x2="9.0125" y2="22.8" width="0.15" layer="1"/>
 <wire x1="9.0125" y1="22.8" x2="9.2" y2="22.55" width="0.15" layer="1"/>
@@ -3012,11 +3016,11 @@ Everything else you will find on https://aisler.net/help</description>
 <wire x1="10.85" y1="25.9" x2="11.05" y2="25.65" width="0.3048" layer="1"/>
 <wire x1="11.05" y1="25.65" x2="11.6" y2="25.45" width="0.3048" layer="1"/>
 <wire x1="11.6" y1="25.45" x2="12.1" y2="24.7" width="0.3048" layer="1"/>
-<wire x1="12.1" y1="24.7" x2="12.1" y2="22.35" width="0.3048" layer="1"/>
-<wire x1="12.1" y1="22.35" x2="12.7" y2="21.8" width="0.3048" layer="1"/>
-<wire x1="12.7" y1="21.8" x2="12.7" y2="20.7" width="0.3048" layer="1"/>
-<wire x1="12.7" y1="20.7" x2="12.9" y2="20.6" width="0.3048" layer="1"/>
-<wire x1="12.9" y1="20.6" x2="14.5" y2="20.6" width="0.3048" layer="1"/>
+<wire x1="12.1" y1="24.7" x2="12.1" y2="22.5" width="0.3048" layer="1"/>
+<wire x1="12.1" y1="22.5" x2="13.3" y2="21.65" width="0.3048" layer="1"/>
+<wire x1="13.3" y1="21.65" x2="13.3" y2="20.7" width="0.3048" layer="1"/>
+<wire x1="13.3" y1="20.7" x2="13.5" y2="20.6" width="0.3048" layer="1"/>
+<wire x1="13.5" y1="20.6" x2="14.5" y2="20.6" width="0.3048" layer="1"/>
 <via x="14.5" y="20.6" extent="1-16" drill="0.25" diameter="0.45"/>
 <wire x1="14.5" y1="20.6" x2="14.5" y2="19.6" width="0.3048" layer="16"/>
 <wire x1="14.5" y1="19.6" x2="14.4" y2="19.55" width="0.3048" layer="16"/>
@@ -3129,11 +3133,11 @@ Everything else you will find on https://aisler.net/help</description>
 <wire x1="14.01" y1="24.76" x2="14.2" y2="24.95" width="0.125" layer="16"/>
 <wire x1="14.2" y1="24.95" x2="15.45" y2="24.95" width="0.125" layer="16"/>
 <wire x1="15.45" y1="24.95" x2="15.55" y2="24.85" width="0.125" layer="16"/>
-<wire x1="15.55" y1="24.85" x2="15.55" y2="22.95" width="0.125" layer="16"/>
-<wire x1="15.55" y1="22.95" x2="15.7" y2="22.8" width="0.125" layer="16"/>
-<via x="15.7" y="22.8" extent="1-16" drill="0.25" diameter="0.45"/>
-<wire x1="15.7" y1="22.8" x2="15.8" y2="22.8" width="0.3048" layer="2"/>
-<wire x1="15.8" y1="22.8" x2="16.15" y2="23.15" width="0.3048" layer="2"/>
+<wire x1="15.55" y1="24.85" x2="15.55" y2="23" width="0.125" layer="16"/>
+<wire x1="15.55" y1="23" x2="15.7" y2="22.85" width="0.125" layer="16"/>
+<via x="15.7" y="22.85" extent="1-16" drill="0.25" diameter="0.45"/>
+<wire x1="15.7" y1="22.85" x2="15.8" y2="22.85" width="0.3048" layer="2"/>
+<wire x1="15.8" y1="22.85" x2="16.15" y2="23.15" width="0.3048" layer="2"/>
 </signal>
 <signal name="N$54">
 <contactref element="U2" pad="C2"/>
@@ -3232,10 +3236,10 @@ Everything else you will find on https://aisler.net/help</description>
 <wire x1="19.2" y1="53.45" x2="19.2" y2="50.3" width="0.3048" layer="2"/>
 <wire x1="19.2" y1="50.3" x2="19.45" y2="49.95" width="0.3048" layer="2"/>
 <via x="19.45" y="49.95" extent="1-16" drill="0.25" diameter="0.5"/>
-<wire x1="19.45" y1="49.95" x2="19.45" y2="22.4" width="0.3048" layer="15"/>
-<wire x1="19.45" y1="22.4" x2="18.85" y2="21.85" width="0.3048" layer="15"/>
-<wire x1="18.85" y1="21.85" x2="15.05" y2="21.85" width="0.3048" layer="15"/>
-<wire x1="15.05" y1="21.85" x2="14.5" y2="22.5" width="0.3048" layer="15"/>
+<wire x1="19.45" y1="49.95" x2="19.45" y2="22.3" width="0.3048" layer="15"/>
+<wire x1="19.45" y1="22.3" x2="18.8" y2="21.65" width="0.3048" layer="15"/>
+<wire x1="18.8" y1="21.65" x2="15" y2="21.65" width="0.3048" layer="15"/>
+<wire x1="15" y1="21.65" x2="14.5" y2="22.5" width="0.3048" layer="15"/>
 <via x="14.5" y="22.5" extent="1-16" drill="0.25" diameter="0.5"/>
 <wire x1="14.5" y1="22.5" x2="14.5" y2="22.52" width="0.15" layer="16"/>
 <wire x1="14.5" y1="22.52" x2="14.01" y2="23.01" width="0.3048" layer="16"/>
@@ -3375,16 +3379,16 @@ Everything else you will find on https://aisler.net/help</description>
 <wire x1="10.01" y1="25.41" x2="10.04" y2="25.41" width="0.15" layer="16"/>
 <wire x1="10.04" y1="25.41" x2="10.4" y2="25.0125" width="0.15" layer="16"/>
 <via x="10.4" y="25.0125" extent="1-16" drill="0.25" diameter="0.45"/>
-<wire x1="10.4" y1="25.0125" x2="11.2625" y2="24.2" width="0.15" layer="1"/>
-<wire x1="11.2625" y1="24.2" x2="11.7" y2="23.85" width="0.15" layer="1"/>
-<wire x1="11.7" y1="23.85" x2="11.7" y2="21.9" width="0.2" layer="1"/>
-<wire x1="11.7" y1="21.9" x2="11.8" y2="21.8" width="0.225" layer="1"/>
-<wire x1="11.8" y1="21.8" x2="12.15" y2="21.5" width="0.25" layer="1"/>
-<wire x1="12.15" y1="21.5" x2="12.15" y2="20.25" width="0.275" layer="1"/>
-<wire x1="12.15" y1="20.25" x2="12.15" y2="20.2" width="0.29" layer="1"/>
-<wire x1="12.15" y1="20.2" x2="12.15" y2="17.55" width="0.3048" layer="1"/>
-<wire x1="12.15" y1="17.55" x2="12.475" y2="17.225" width="0.3048" layer="1"/>
-<wire x1="12.475" y1="17.225" x2="14.725" y2="17.225" width="0.3048" layer="1"/>
+<wire x1="10.4" y1="25.0125" x2="10.4125" y2="25" width="0.15" layer="1"/>
+<wire x1="10.4125" y1="25" x2="11.7" y2="23.85" width="0.15" layer="1"/>
+<wire x1="11.7" y1="23.85" x2="11.7" y2="22.2" width="0.2" layer="1"/>
+<wire x1="11.7" y1="22.2" x2="11.8" y2="22.05" width="0.225" layer="1"/>
+<wire x1="11.8" y1="22.05" x2="12.5" y2="21.55" width="0.25" layer="1"/>
+<wire x1="12.5" y1="21.55" x2="12.5" y2="20.25" width="0.275" layer="1"/>
+<wire x1="12.5" y1="20.25" x2="12.5" y2="20.2" width="0.29" layer="1"/>
+<wire x1="12.5" y1="20.2" x2="12.5" y2="17.55" width="0.3048" layer="1"/>
+<wire x1="12.5" y1="17.55" x2="12.825" y2="17.225" width="0.3048" layer="1"/>
+<wire x1="12.825" y1="17.225" x2="14.725" y2="17.225" width="0.3048" layer="1"/>
 <wire x1="14.725" y1="17.225" x2="14.75" y2="17.2" width="0.3048" layer="1"/>
 <via x="14.75" y="17.2" extent="1-16" drill="0.25" diameter="0.45"/>
 <wire x1="14.75" y1="17.2" x2="14.75" y2="17.0125" width="0.3048" layer="16"/>
