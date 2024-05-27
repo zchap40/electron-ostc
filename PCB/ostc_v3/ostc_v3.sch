@@ -1732,8 +1732,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <package name="CON_5055670251">
 <smd name="1" x="0" y="0" dx="0.8" dy="1.2" layer="1"/>
 <smd name="2" x="-1.25" y="0" dx="0.8" dy="1.2" layer="1"/>
-<smd name="3" x="1.9" y="2.295" dx="1.3" dy="2.15" layer="1"/>
-<smd name="4" x="-3.15" y="2.295" dx="1.3" dy="2.15" layer="1"/>
+<smd name="3" x="1.9" y="2.295" dx="1.3" dy="2.15" layer="1" thermals="no"/>
+<smd name="4" x="-3.15" y="2.295" dx="1.3" dy="2.15" layer="1" thermals="no"/>
 <wire x1="-3.5052" y1="3.8608" x2="-3.5052" y2="3.683" width="0.1524" layer="21"/>
 <wire x1="-3.5052" y1="-0.3556" x2="-1.9812" y2="-0.3556" width="0.1524" layer="21"/>
 <wire x1="2.2606" y1="-0.3556" x2="2.2606" y2="0.889" width="0.1524" layer="21"/>
@@ -1757,8 +1757,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <smd name="4" x="-3.75" y="0" dx="0.8" dy="1.2" layer="1"/>
 <smd name="5" x="-5" y="0" dx="0.8" dy="1.2" layer="1"/>
 <smd name="6" x="-6.25" y="0" dx="0.8" dy="1.2" layer="1"/>
-<smd name="7" x="1.9" y="2.295" dx="1.3" dy="2.15" layer="1"/>
-<smd name="8" x="-8.15" y="2.295" dx="1.3" dy="2.15" layer="1"/>
+<smd name="7" x="1.9" y="2.295" dx="1.3" dy="2.15" layer="1" thermals="no"/>
+<smd name="8" x="-8.15" y="2.295" dx="1.3" dy="2.15" layer="1" thermals="no"/>
 <wire x1="-8.509" y1="3.8608" x2="-8.509" y2="3.683" width="0.1524" layer="21"/>
 <wire x1="-8.509" y1="-0.3556" x2="-6.9596" y2="-0.3556" width="0.1524" layer="21"/>
 <wire x1="2.2606" y1="-0.3556" x2="2.2606" y2="0.889" width="0.1524" layer="21"/>
@@ -7162,30 +7162,30 @@ Metric Code Size 5664</description>
 <wire x1="1.95" y1="1.95" x2="1.95" y2="-1.95" width="0.2032" layer="51"/>
 <wire x1="1.95" y1="-1.95" x2="-1.95" y2="-1.95" width="0.2032" layer="51"/>
 <wire x1="-1.95" y1="-1.95" x2="-1.95" y2="1.95" width="0.2032" layer="51"/>
-<smd name="1" x="-1.825" y="1.25" dx="0.6" dy="0.3" layer="1" roundness="50" stop="no" cream="no"/>
-<smd name="2" x="-1.825" y="0.75" dx="0.6" dy="0.3" layer="1" roundness="50" stop="no" cream="no"/>
-<smd name="3" x="-1.825" y="0.25" dx="0.6" dy="0.3" layer="1" roundness="50" stop="no" cream="no"/>
-<smd name="4" x="-1.825" y="-0.25" dx="0.6" dy="0.3" layer="1" roundness="50" stop="no" cream="no"/>
-<smd name="5" x="-1.825" y="-0.75" dx="0.6" dy="0.3" layer="1" roundness="50" stop="no" cream="no"/>
-<smd name="6" x="-1.825" y="-1.25" dx="0.6" dy="0.3" layer="1" roundness="50" stop="no" cream="no"/>
-<smd name="7" x="-1.25" y="-1.825" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R90" stop="no" cream="no"/>
-<smd name="8" x="-0.75" y="-1.825" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R90" stop="no" cream="no"/>
-<smd name="9" x="-0.25" y="-1.825" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R90" stop="no" cream="no"/>
-<smd name="10" x="0.25" y="-1.825" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R90" stop="no" cream="no"/>
-<smd name="11" x="0.75" y="-1.825" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R90" stop="no" cream="no"/>
-<smd name="12" x="1.25" y="-1.825" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R90" stop="no" cream="no"/>
-<smd name="13" x="1.825" y="-1.25" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R180" stop="no" cream="no"/>
-<smd name="14" x="1.825" y="-0.75" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R180" stop="no" cream="no"/>
-<smd name="15" x="1.825" y="-0.25" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R180" stop="no" cream="no"/>
-<smd name="16" x="1.825" y="0.25" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R180" stop="no" cream="no"/>
-<smd name="17" x="1.825" y="0.75" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R180" stop="no" cream="no"/>
-<smd name="18" x="1.825" y="1.25" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R180" stop="no" cream="no"/>
-<smd name="19" x="1.25" y="1.825" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R270" stop="no" cream="no"/>
-<smd name="20" x="0.75" y="1.825" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R270" stop="no" cream="no"/>
-<smd name="21" x="0.25" y="1.825" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R270" stop="no" cream="no"/>
-<smd name="22" x="-0.25" y="1.825" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R270" stop="no" cream="no"/>
-<smd name="23" x="-0.75" y="1.825" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R270" stop="no" cream="no"/>
-<smd name="24" x="-1.25" y="1.825" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R270" stop="no" cream="no"/>
+<smd name="1" x="-1.825" y="1.25" dx="0.6" dy="0.3" layer="1" roundness="50" stop="no" thermals="no" cream="no"/>
+<smd name="2" x="-1.825" y="0.75" dx="0.6" dy="0.3" layer="1" roundness="50" stop="no" thermals="no" cream="no"/>
+<smd name="3" x="-1.825" y="0.25" dx="0.6" dy="0.3" layer="1" roundness="50" stop="no" thermals="no" cream="no"/>
+<smd name="4" x="-1.825" y="-0.25" dx="0.6" dy="0.3" layer="1" roundness="50" stop="no" thermals="no" cream="no"/>
+<smd name="5" x="-1.825" y="-0.75" dx="0.6" dy="0.3" layer="1" roundness="50" stop="no" thermals="no" cream="no"/>
+<smd name="6" x="-1.825" y="-1.25" dx="0.6" dy="0.3" layer="1" roundness="50" stop="no" thermals="no" cream="no"/>
+<smd name="7" x="-1.25" y="-1.825" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R90" stop="no" thermals="no" cream="no"/>
+<smd name="8" x="-0.75" y="-1.825" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R90" stop="no" thermals="no" cream="no"/>
+<smd name="9" x="-0.25" y="-1.825" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R90" stop="no" thermals="no" cream="no"/>
+<smd name="10" x="0.25" y="-1.825" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R90" stop="no" thermals="no" cream="no"/>
+<smd name="11" x="0.75" y="-1.825" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R90" stop="no" thermals="no" cream="no"/>
+<smd name="12" x="1.25" y="-1.825" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R90" stop="no" thermals="no" cream="no"/>
+<smd name="13" x="1.825" y="-1.25" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R180" stop="no" thermals="no" cream="no"/>
+<smd name="14" x="1.825" y="-0.75" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R180" stop="no" thermals="no" cream="no"/>
+<smd name="15" x="1.825" y="-0.25" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R180" stop="no" thermals="no" cream="no"/>
+<smd name="16" x="1.825" y="0.25" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R180" stop="no" thermals="no" cream="no"/>
+<smd name="17" x="1.825" y="0.75" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R180" stop="no" thermals="no" cream="no"/>
+<smd name="18" x="1.825" y="1.25" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R180" stop="no" thermals="no" cream="no"/>
+<smd name="19" x="1.25" y="1.825" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R270" stop="no" thermals="no" cream="no"/>
+<smd name="20" x="0.75" y="1.825" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R270" stop="no" thermals="no" cream="no"/>
+<smd name="21" x="0.25" y="1.825" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R270" stop="no" thermals="no" cream="no"/>
+<smd name="22" x="-0.25" y="1.825" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R270" stop="no" thermals="no" cream="no"/>
+<smd name="23" x="-0.75" y="1.825" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R270" stop="no" thermals="no" cream="no"/>
+<smd name="24" x="-1.25" y="1.825" dx="0.6" dy="0.3" layer="1" roundness="50" rot="R270" stop="no" thermals="no" cream="no"/>
 <text x="-2" y="2.5" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2" y="-3.5" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-2" y1="1.125" x2="-1.575" y2="1.375" layer="51"/>
@@ -7394,8 +7394,8 @@ Source: https://www.analog.com/media/en/technical-documentation/data-sheets/max4
 <smd name="3" x="3.1" y="0" dx="2.55" dy="1" layer="1"/>
 <smd name="4" x="3.1" y="2" dx="2.55" dy="1" layer="1"/>
 <smd name="5" x="3.1" y="4" dx="2.55" dy="1" layer="1"/>
-<smd name="MP1" x="-0.375" y="-6.55" dx="1.7" dy="1.7" layer="1"/>
-<smd name="MP2" x="-0.375" y="6.55" dx="1.7" dy="1.7" layer="1"/>
+<smd name="MP1" x="-0.375" y="-6.55" dx="1.7" dy="1.7" layer="1" thermals="no"/>
+<smd name="MP2" x="-0.375" y="6.55" dx="1.7" dy="1.7" layer="1" thermals="no"/>
 <text x="0" y="8.89" size="1.27" layer="25" align="center">&gt;NAME</text>
 <text x="1.27" y="-8.89" size="1.27" layer="27" align="center">&gt;VALUE</text>
 <wire x1="-2.375" y1="6.25" x2="1.825" y2="6.25" width="0.1" layer="51"/>
